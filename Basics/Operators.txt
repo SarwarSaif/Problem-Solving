@@ -1,0 +1,7 @@
+Python has different oprators as follows:
+
+1. Arithmatic Operators (+, -, *, /)
+2. Assignment Operators (=)
+3. Relational Operators (<, >, <=, >=, ==)
+4. Logical Operators (and, or)
+5. Unary Operators (e.g. n=-n)

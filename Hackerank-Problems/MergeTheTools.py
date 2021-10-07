@@ -1,3 +1,5 @@
+### Problem link: https://www.hackerrank.com/challenges/merge-the-tools/problem
+
 def merge_the_tools(string, k):
     # your code goes here
     # get the length of the string
@@ -7,10 +9,8 @@ def merge_the_tools(string, k):
         print(string)
     else:
         # Divide the string into n/k substrings
-        # Dividend 0
-        substring_len = n//k
-        for i in range(0, n, substring_len):
-            substring = string[i:i+substring_len]
+        for i in range(0, n, k):
+            substring = string[i:i+k]
             # As order of the subsequence matters, we can use dict to remove duplicate characters
             result = "".join(dict.fromkeys(substring))
             print(result)
@@ -18,7 +18,7 @@ def merge_the_tools(string, k):
             #print the excess part
             left_substring = string[(n-(n%k)):n]
             result = "".join(dict.fromkeys(left_substring))
-            print(result)    
+            print(result)      
 
 if __name__ == '__main__':
     string, k = input(), int(input())

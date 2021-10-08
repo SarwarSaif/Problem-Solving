@@ -1,20 +1,7 @@
 import time
 def longestPalindrome2( s):
     res = ""
-    #flag=0
-    A=reversed(s[:len(s)-3])
-    t=time.time()
-    j=len(s)-3
-    print(s[0:j:1])
-    print(s[len(s)-4::-1])
-    print("AAAA: ",str(A))
-    print(s[len(s)-4::-1]==s[0:len(s)-3])
-    """f=0;
-        if(s[:len(s)//2]==s[( len(s)//2) -1 ::-1]):
-            f=1
-        """
-    if(s[len(s)-4::-1]==s[0:len(s)-3]):
-        
+    if(s==s[::-1]): # Check if the String itself a palindrome
         res=s
         print("well",time.time()-t)
         
